@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.show-more-container').forEach(function (container) {
+      const moreText = container.querySelector('.more-text');
+      const toggleLink = container.querySelector('.toggle-link');
+
+      
+      moreText.style.display = 'none';
+      toggleLink.textContent = 'Show more';
+
+      toggleLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        const isHidden = moreText.style.display === 'none';
+        moreText.style.display = isHidden ? 'inline' : 'none';
+        toggleLink.textContent = isHidden ? 'Show less' : 'Show more';
+      });
+    });
+  });
+</script>
+  <head>
+	<meta name="generator" content="Hugo 0.129.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>PS </title>
+  </head>
+  <body>
+    <div class="centered-site">
+      
+
+<style>
+.banner {
+  * {
+    margin: 0;
+  }
+  li {
+    line-height: 1.4em;
+  }
+  h4 {
+    margin-top: 8px;
+  }
+  font-size: 1.1em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #f2f3f3;
+  justify-content: space-between;
+}
+
+.bannerleft {
+  padding: 5px;
+  padding-left: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+</style>
+<div class="banner">
+  <div class="bannerleft">
+    <div>
+<h1> Paul Schwerdtner </h1>
+    <h4>Postdoctoral Researcher</h4>
+    <p>Courant Institute of Mathematical Sciences, New York University</p>
+    </div>
+    <div>
+    <h4>Interests</h4>
+    <ul>
+      <li>High performance computing</li>
+      <li>Model order reduction for large-scale simulations</li>
+      <li>Numerical linear algebra</li>
+      <li>Robust controller design and Scientific Machine Learning</li>
+    </ul>
+    </div>
+    <div style="padding: 8px;">
+      <a target="_blank" href="mailto:paul.schwerdtner@nyu.edu" class="button-link">Email</a>
+      <a target="_blank" href="/SchwerdtnerCV.pdf" class="button-link">CV</a>
+      <a target="_blank" href="https://scholar.google.com/citations?user=OKQsA9UAAAAJ" class="button-link">Google Scholar</a>
+    </div>
+  </div>
+  <div>
+    <img src="/schwerdtner.png" width=250px alt="Face of Paul Schwerdtner">
+  </div>
+</div>
+
+<h1 id="experience--education">Experience &amp; Education</h1>
+
+<style>
+.experience-table {
+  width: 100%;
+  font-size: 1.05em;
+  line-height: 1.4em;
+  border-spacing: 0;
+   
+  table-layout: fixed;
+  margin-bottom: 1em;
+}
+
+.experience-table td {
+  padding: 0.05em 0;
+  vertical-align: top;
+}
+
+.experience-table .company {
+  padding-right: 10px;
+}
+
+.experience-table .role {
+  padding-right: 10px;
+}
+
+.experience-table .degree {
+  padding-right: 10px;
+}
+
+.experience-table .institution {
+  padding-right: 10px;
+}
+
+.experience-table .dates {
+  text-align: left;
+  color: gray;
+}
+
+.experience-table .advisor {
+  font-size: 0.9rem;
+  color: #555;
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+</style>
+
+<table class="experience-table">
+  <tr>
+    <td class="company">Courant Institute, NYU</td>
+    <td class="role">Postdoctoral Researcher</td>
+    <td class="dates">Jun 2023 - present</td>
+  </tr>
+  <tr>
+    <td class="company">Tech. Univ. Berlin</td>
+    <td class="role">Scientific Assistant</td>
+    <td class="dates">Oct 2018 - Mar 2023</td>
+  </tr>
+  <tr>
+    <td class="company">Mitsubishi Electric Research Labs</td>
+    <td class="role">Research Intern</td>
+    <td class="dates">Oct 2018 - Mar 2023</td>
+  </tr>
+  <tr>
+    <td class="company">Continental AG</td>
+    <td class="role">R&D Intern</td>
+    <td class="dates">Nov 2015 - Mar 2016</td>
+  </tr>
+</table>
+
+
+<table class="experience-table">
+  <tr>
+    <td class="degree">Ph.D. in Mathematics </td>
+    <td class="institution">TU Berlin, Germany</td>
+    <td class="dates">Oct 2018 - Jan 2023</td>
+  </tr>
+  <tr>
+    <td class="degree">M.S. in Engineering Science </td>
+    <td class="institution">TU Berlin, Germany</td>
+    <td class="dates">Oct 2016 - Apr 2018</td>
+  </tr>
+  <tr>
+    <td class="degree">B.S. in Engineering Science </td>
+    <td class="institution">TU Berlin, Germany</td>
+    <td class="dates">Oct 2012 - Apr 2016</td>
+  </tr>
+</table>
+
+<h1 id="recent-projects">Recent Projects</h1>
+<style>
+.project {
+  margin-bottom: 40px;
+  width: 100%;
+  background-color: #f2f3f3;
+  display: flex;
+  flex-direction: row;
+}
+.project-image {
+  width: 35%;
+   
+}
+.project-description {
+  width: 65%;
+  padding-top: 0px;
+  padding-left: 12px;
+  li {
+    line-height: 1.1em;
+  }
+  * {
+    margin: 0;
+    margin-top: 5px;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+  a:hover {
+     
+    color: blue;
+  }
+  h4 {
+    padding-top: 8px;
+  }
+
+}
+</style>
+
+<div class="project">
+  <div class="project-image">
+  <video autoplay muted loop playsinline width="100%">
+  <source src="qmvideo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+  </div>
+
+  <div class="project-description show-more-container">
+    <h2 style="margin-top: 0; padding-top: 0px;">Quadratic Manifolds</h2>
+    <h4>Utilizing nonlinear dependencies in latent space</h4>
+    <p>Quadratic manifolds augment linear approximations with quadratic correction terms. This is useful for finding efficient representations of high-dimensional data points to capture fine details with low-dimensional surrogates.</p>
+    <h4>Contributions</h4>
+    <ul>
+      <li>Greedy algorithm leading to <b>orders of magnitudes improvement in accuracy</b></li>
+      <li><b>Streaming-based</b> manifold computation to process <b>petabyte-scale</b> simulation data</li>
+      <li>Applications to complex flow problems in collaboration with National Labs (LANL & NREL)</li>
+    </ul>
+    <h4>Related Publications</h4>
+    <ol class="bracketed-list">
+    <li><a target="_blank" href="https://arxiv.org/abs/2403.06732"> P. Schwerdtner, B. Peherstorfer, <i>Greedy construction of quadratic manifolds for nonlinear dimensionality reduction and nonlinear model reduction</i>, 2024 </a></li>
+    <span class="more-text">
+      <li><a target="_blank" href="https://royalsocietypublishing.org/doi/abs/10.1098/rspa.2024.0670"> P. Schwerdtner, P. Mohan, A. Pachalieva, J. Bessac, D. O'Malley, B. Peherstorfer, <i>Online learning of quadratic manifolds from streaming data for nonlinear dimensionality reduction and nonlinear model reduction</i>, Proceedings of the Royal Society A, 2025 </a></li>
+    </span>
+      
+    </ol>
+    <div>
+      <a href="#" class="toggle-link" style="padding-top: 3px; color: gray">Show more</a>
+    </div>
+  </div>
+</div>
+
+<div class="project">
+  <div class="project-image">
+  <video autoplay muted loop playsinline width="100%">
+  <source src="mfmc.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+  </div>
+
+  <div class="project-description">
+    <h2 style="margin-top: 0; padding-top: 0px;">Multilevel Monte Carlo wildfire simulation</h2>
+    <h4>Enabling uncertainty quantification at operational scales
+</h4>
+    <p>Developed methodology for merging multiple data sources for estimating burned areas in large-scale coupled atmospheric wildfire simulations.</p>
+    <h4>Contributions</h4>
+    <ul>
+      <li>Contributed <b>uncertainty quantification</b> method to Google-research wildfire simulation framework swirl_lm</li>
+      <li><b>Multilevel Monte Carlo</b> simulation to enable uncertainty quantification at operational scales</li>
+      <li>Designed large-scale simulation study using <b>Google-Cloud TPUs</b> to simulate wildfire scenarios in California</li>
+    </ul>
+    <h4>Related Publications</h4>
+    <ol class="bracketed-list">
+      <li><a target="_blank" href="https://academic.oup.com/pnasnexus/article/3/12/pgae554/7920659">P. Schwerdtner, F. Law, Q. Wang, C. Gazen, Y.-F. Chen, M. Ihme, and B. Peherstorfer, Uncertainty quantification in coupled wildfire–atmosphere simulations at scale, PNAS Nexus, 2024</a></li>
+      
+    </ol>
+  </div>
+</div>
+
+
+
+    </div>
+  </body>
+</html>
+

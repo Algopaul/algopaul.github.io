@@ -1,0 +1,83 @@
+:root {
+  --elementMarginPx: 20px;
+}
+
+* {
+  font-family: Roboto;
+}
+
+ul {
+  padding-left: 1.0em;
+}
+
+
+.centered-site {
+  max-width: 1000px;
+  margin: auto;
+  padding-top: var(--elementMarginPx);
+  padding-left: var(--elementMarginPx);
+  padding-right: var(--elementMarginPx);
+}
+
+h1,h2,h3 {
+  font-family: Raleway-Light;
+}
+
+
+img,video {
+  display: block;
+}
+
+@font-face{
+  font-family: "Raleway-Light";
+  src: url('/fonts/Raleway-Light.ttf') format('truetype')
+}
+
+@font-face{
+  font-family: "Raleway-Medium";
+  src: url('/fonts/Raleway-Medium.ttf') format('truetype')
+}
+
+@font-face{
+  font-family: "Raleway-SemiBold";
+  src: url('/fonts/Raleway-SemiBold.ttf') format('truetype')
+}
+
+.button-link {
+  display: inline-block;
+  padding: 0.2em 0.2em;
+  /* background-color: #f2f2f2; */
+  width: 8em;
+  color: blue;
+  /* text-decoration: underline; */
+  border-radius: 2px;
+  /* transition: box-shadow 0.3s ease; */
+  text-align: center;
+}
+
+.button-link:hover {
+  text-decoration: underline;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); */
+}
+
+.more-text {
+  display: none;
+}
+
+.bracketed-list {
+  list-style: none;
+  counter-reset: item;
+  padding-left: 0;
+}
+
+.bracketed-list li {
+  counter-increment: item;
+  margin-bottom: 0.5em;
+  position: relative;
+}
+
+.bracketed-list li::before {
+  content: "[" counter(item) "] ";
+  font-weight: bold;
+  margin-right: 0.5em;
+}
