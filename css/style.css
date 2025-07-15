@@ -14,9 +14,17 @@ ul {
 .centered-site {
   max-width: 1000px;
   margin: auto;
-  padding-top: var(--elementMarginPx);
-  padding-left: var(--elementMarginPx);
-  padding-right: var(--elementMarginPx);
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 810px) {
+  .centered-site {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 h1,h2,h3 {
@@ -41,6 +49,38 @@ img,video {
 @font-face{
   font-family: "Raleway-SemiBold";
   src: url('/fonts/Raleway-SemiBold.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
 }
 
 .button-link {
