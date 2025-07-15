@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><script>
+  <script>
     document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.show-more-container').forEach(function (container) {
       const moreText = container.querySelector('.more-text');
@@ -58,11 +58,43 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.only-small {
+  display: none;
+}
+
+@media (max-width: 810px) {
+  .only-wide {
+    display: none;
+  }
+  .only-small {
+    display: flex;
+    justify-content: center;
+    margin: 12px;
+  }
+  .banner {
+    flex-direction: column;
+    align-items: center;
+
+    h1, h3, h4 {
+      text-align: center;
+    }
+  }
+  .bannerleft {
+    align-items: center;
+  }
+  .project-description {
+    width: 95%;
+  }
+}
 </style>
 <div class="banner">
   <div class="bannerleft">
     <div>
 <h1> Paul Schwerdtner </h1>
+      <div class="only-small">
+      <img src="/schwerdtner.png" width=250px alt="Face of Paul Schwerdtner">
+      </div>
     <h4>Postdoctoral Researcher</h4>
     <p>Courant Institute of Mathematical Sciences, New York University</p>
     </div>
@@ -81,7 +113,7 @@
       <a target="_blank" href="https://scholar.google.com/citations?user=OKQsA9UAAAAJ" class="button-link">Google Scholar</a>
     </div>
   </div>
-  <div>
+  <div class='only-wide'>
     <img src="/schwerdtner.png" width=250px alt="Face of Paul Schwerdtner">
   </div>
 </div>
