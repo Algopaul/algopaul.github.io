@@ -81,3 +81,8 @@ img,video {
   font-weight: bold;
   margin-right: 0.5em;
 }
+
+div> a.toggle-link {
+  padding-top: 3px;
+  color: gray;
+}

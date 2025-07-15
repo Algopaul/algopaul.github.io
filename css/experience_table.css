@@ -1,0 +1,42 @@
+.experience-table {
+  width: 100%;
+  font-size: 1.05em;
+  line-height: 1.4em;
+  border-spacing: 0;
+  /* border-collapse: separate; */
+  table-layout: fixed;
+  margin-bottom: 1em;
+}
+
+.experience-table td {
+  padding: 0.05em 0;
+  vertical-align: top;
+}
+
+.experience-table .company {
+  padding-right: 10px;
+}
+
+.experience-table .role {
+  padding-right: 10px;
+}
+
+.experience-table .degree {
+  padding-right: 10px;
+}
+
+.experience-table .institution {
+  padding-right: 10px;
+}
+
+.experience-table .dates {
+  text-align: left;
+  color: gray;
+}
+
+.experience-table .advisor {
+  font-size: 0.9rem;
+  color: #555;
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
