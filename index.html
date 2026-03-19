@@ -20,7 +20,7 @@
   });
 </script>
   <head>
-	<meta name="generator" content="Hugo 0.129.0">
+	<meta name="generator" content="Hugo 0.152.2">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
@@ -32,70 +32,6 @@
     <div class="centered-site">
       
 
-<style>
-.banner {
-  * {
-    margin: 0;
-  }
-  li {
-    line-height: 1.4em;
-  }
-  h4 {
-    margin-top: 8px;
-  }
-  font-size: 1.1em;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  background-color: #f2f3f3;
-  justify-content: space-between;
-}
-
-.bannerleft {
-  padding: 5px;
-  padding-left: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.only-small {
-  display: none;
-}
-
-@media (max-width: 810px) {
-  .only-wide {
-    display: none;
-  }
-  .only-small {
-    display: flex;
-    justify-content: center;
-     
-  }
-  .banner {
-    flex-direction: column;
-    align-items: center;
-
-    h1, h3, h4 {
-      text-align: center;
-    }
-  }
-  .bannerleft {
-    align-items: center;
-  }
-  .project-description {
-    width: 95%;
-  }
-}
-
-@media (max-width: 500px) {
-  .button-links {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-</style>
 <div class="banner">
   <div class="bannerleft">
     <div>
@@ -170,65 +106,142 @@
 </table>
 
 <h1 id="recent-projects">Recent Projects</h1>
+
+
 <div class="project">
-    <h2 class='only-small'>Quadratic Manifolds</h2>
+  <h2 class='only-small'>Highly Compressible Sequence Models</h2>
   <div class="project-image">
-  <video autoplay muted loop playsinline width="100%">
-  <source src="qmvideo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+    
+    <img src="/ssmpic.png" width="100%"/>
+    
+  </div>
+
+  <div class="project-description">
+    <h2 class='only-wide'>Highly Compressible Sequence Models</h2>
+    <h4>Regularizing Hankel singular value distributions for compressible dynamics</h4>
+    Deep state space models are a new
+    <h4>Contributions</h4>
+    <ul>
+      
+      <li>Greedy algorithm leading to <strong>orders of magnitudes improvement in accuracy</strong></li>
+      
+      <li><strong>Streaming-based</strong> manifold computation to process <strong>petabyte-scale</strong> simulation data</li>
+      
+      <li>Applications to complex flow problems in collaboration with National Labs (LANL &amp; NREL)</li>
+      
+    </ul>
+    <h4>Related Publications</h4>
+    <ol class="bracketed-list">
+      
+        
+        <li><a target="_blank" href="https://arxiv.org/abs/2510.22951">P. Schwerdtner, J. Berman, B. Peherstorfer, <em>Hankel Singular Value Regularization for Highly Compressible State Space models</em>, <strong>NeurIPS 2025</strong></a></li>
+        
+      
+      
+    </ol>
+    
+  </div>
+</div>
+
+
+
+<div class="project">
+  <h2 class='only-small'>Quadratic Manifolds</h2>
+  <div class="project-image">
+    
+    <video autoplay muted loop playsinline width="100%">
+      <source src="qmvideo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
   </div>
 
   <div class="project-description show-more-container">
     <h2 class='only-wide'>Quadratic Manifolds</h2>
     <h4>Utilizing nonlinear dependencies in latent space</h4>
-    <p>Quadratic manifolds augment linear approximations with quadratic correction terms. This is useful for finding efficient representations of high-dimensional data points to capture fine details with low-dimensional surrogates.</p>
+    Quadratic manifolds augment linear approximations with quadratic correction terms. This is useful for finding efficient representations of high-dimensional data points to capture fine details with low-dimensional surrogates.
     <h4>Contributions</h4>
     <ul>
-      <li>Greedy algorithm leading to <b>orders of magnitudes improvement in accuracy</b></li>
-      <li><b>Streaming-based</b> manifold computation to process <b>petabyte-scale</b> simulation data</li>
-      <li>Applications to complex flow problems in collaboration with National Labs (LANL & NREL)</li>
+      
+      <li>Greedy algorithm leading to <strong>orders of magnitudes improvement in accuracy</strong></li>
+      
+      <li><strong>Streaming-based</strong> manifold computation to process <strong>petabyte-scale</strong> simulation data</li>
+      
+      <li>Applications to complex flow problems in collaboration with National Labs (LANL &amp; NREL)</li>
+      
     </ul>
     <h4>Related Publications</h4>
     <ol class="bracketed-list">
-    <li><a target="_blank" href="https://arxiv.org/abs/2403.06732"> P. Schwerdtner, B. Peherstorfer, <i>Greedy construction of quadratic manifolds for nonlinear dimensionality reduction and nonlinear model reduction</i>, 2024 </a></li>
-    <span class="more-text">
-      <li><a target="_blank" href="https://royalsocietypublishing.org/doi/abs/10.1098/rspa.2024.0670"> P. Schwerdtner, P. Mohan, A. Pachalieva, J. Bessac, D. O'Malley, B. Peherstorfer, <i>Online learning of quadratic manifolds from streaming data for nonlinear dimensionality reduction and nonlinear model reduction</i>, Proceedings of the Royal Society A, 2025 </a></li>
-        <li><a target="_blank" href="https://youtu.be/XL7lGx51X0c">Video: Talk at MORE-Conference (San Diego, 2024)</a></li>
-    </span>
+      
+        
+        <li><a target="_blank" href="https://arxiv.org/abs/2403.06732">P. Schwerdtner, B. Peherstorfer, <em>Greedy construction of quadratic manifolds for nonlinear dimensionality reduction and nonlinear model reduction</em>, 2024</a></li>
+        
+      
+        
+      
+        
+      
+      
+      <span class="more-text">
+        
+          
+        
+          
+          <li><a target="_blank" href="https://royalsocietypublishing.org/doi/abs/10.1098/rspa.2024.0670">P. Schwerdtner, P. Mohan, A. Pachalieva, J. Bessac, D. O&rsquo;Malley, B. Peherstorfer, <em>Online learning of quadratic manifolds from streaming data for nonlinear dimensionality reduction and nonlinear model reduction</em>, Proceedings of the Royal Society A, 2025</a></li>
+          
+        
+          
+          <li><a target="_blank" href="https://youtu.be/XL7lGx51X0c">Video: Talk at MORE-Conference (San Diego, 2024)</a></li>
+          
+        
+      </span>
       
     </ol>
+    
     <div>
       <a href="#" class="toggle-link">Show more</a>
     </div>
+    
   </div>
 </div>
 
+
+
 <div class="project">
-    <h2 class='only-small'>Multilevel Monte Carlo wildfire simulation</h2>
+  <h2 class='only-small'>Multilevel Monte Carlo wildfire simulation</h2>
   <div class="project-image">
-  <video autoplay muted loop playsinline width="100%">
-  <source src="mfmc.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+    
+    <video autoplay muted loop playsinline width="100%">
+      <source src="mfmc.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
   </div>
 
   <div class="project-description">
     <h2 class='only-wide'>Multilevel Monte Carlo wildfire simulation</h2>
-    <h4>Enabling uncertainty quantification at operational scales
-</h4>
-    <p>Developed methodology for merging multiple data sources for estimating burned areas in large-scale coupled atmospheric wildfire simulations.</p>
+    <h4>Enabling uncertainty quantification at operational scales</h4>
+    Developed methodology for merging multiple data sources for estimating burned areas in large-scale coupled atmospheric wildfire simulations.
     <h4>Contributions</h4>
     <ul>
-      <li>Contributed <b>uncertainty quantification</b> method to Google-research wildfire simulation framework swirl_lm</li>
-      <li><b>Multilevel Monte Carlo</b> simulation to enable uncertainty quantification at operational scales</li>
-      <li>Designed large-scale simulation study using <b>Google-Cloud TPUs</b> to simulate wildfire scenarios in California</li>
+      
+      <li>Contributed <strong>uncertainty quantification</strong> method to Google-research wildfire simulation framework swirl_lm</li>
+      
+      <li><strong>Multilevel Monte Carlo</strong> simulation to enable uncertainty quantification at operational scales</li>
+      
+      <li>Designed large-scale simulation study using <strong>Google-Cloud TPUs</strong> to simulate wildfire scenarios in California</li>
+      
     </ul>
     <h4>Related Publications</h4>
     <ol class="bracketed-list">
-      <li><a target="_blank" href="https://academic.oup.com/pnasnexus/article/3/12/pgae554/7920659">P. Schwerdtner, F. Law, Q. Wang, C. Gazen, Y.-F. Chen, M. Ihme, and B. Peherstorfer, Uncertainty quantification in coupled wildfire–atmosphere simulations at scale, PNAS Nexus, 2024</a></li>
+      
+        
+        <li><a target="_blank" href="https://academic.oup.com/pnasnexus/article/3/12/pgae554/7920659">P. Schwerdtner, F. Law, Q. Wang, C. Gazen, Y.-F. Chen, M. Ihme, and B. Peherstorfer, Uncertainty quantification in coupled wildfire–atmosphere simulations at scale, PNAS Nexus, 2024</a></li>
+        
+      
       
     </ol>
+    
   </div>
 </div>
 

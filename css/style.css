@@ -1,5 +1,6 @@
 :root {
   --elementMarginPx: 20px;
+  --color-link: #1a6fb5;
 }
 
 * {
@@ -88,7 +89,7 @@ img,video {
   padding: 0.2em 0.2em;
   /* background-color: #f2f2f2; */
   width: 8em;
-  color: blue;
+  color: var(--color-link);
   /* text-decoration: underline; */
   border-radius: 2px;
   /* transition: box-shadow 0.3s ease; */
@@ -125,4 +126,65 @@ img,video {
 div> a.toggle-link {
   padding-top: 3px;
   color: gray;
+}
+
+/* --- Banner --- */
+
+.banner {
+  * {
+    margin: 0;
+  }
+  li {
+    line-height: 1.4em;
+  }
+  h4 {
+    margin-top: 8px;
+  }
+  font-size: 1.1em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #f2f3f3;
+  justify-content: space-between;
+}
+
+.bannerleft {
+  padding: 5px;
+  padding-left: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.only-small {
+  display: none;
+}
+
+@media (max-width: 810px) {
+  .only-wide {
+    display: none;
+  }
+  .only-small {
+    display: flex;
+    justify-content: center;
+    /* margin: 12px; */
+  }
+  .banner {
+    flex-direction: column;
+    align-items: center;
+
+    h1, h3, h4 {
+      text-align: center;
+    }
+  }
+  .bannerleft {
+    align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .button-links {
+    display: flex;
+    flex-direction: column;
+  }
 }
