@@ -119,15 +119,15 @@
   <div class="project-description">
     <h2 class='only-wide'>Highly Compressible Sequence Models</h2>
     <h4>Regularizing Hankel singular value distributions for compressible dynamics</h4>
-    Deep state space models are a new
+    Deep state space models (SSMs) are a new class of sequence models that with inference costs that scale logarithmically in the sequence length (compared to quadratically for transformers).
     <h4>Contributions</h4>
     <ul>
       
-      <li>Greedy algorithm leading to <strong>orders of magnitudes improvement in accuracy</strong></li>
+      <li><strong>Regularizing Hankel singular values</strong> to train SSMs that compress well via balanced truncation, with a provably differentiable nuclear norm objective</li>
       
-      <li><strong>Streaming-based</strong> manifold computation to process <strong>petabyte-scale</strong> simulation data</li>
+      <li><strong>O(n²) algorithm</strong> for computing Hankel singular values by exploiting the matrix block-structure reducing state-dimension cost from O(n³)</li>
       
-      <li>Applications to complex flow problems in collaboration with National Labs (LANL &amp; NREL)</li>
+      <li>Up to <strong>10× accuracy improvement</strong> compared to previous compression methods</li>
       
     </ul>
     <h4>Related Publications</h4>
